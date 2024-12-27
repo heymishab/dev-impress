@@ -11,3 +11,11 @@ for (let i = 0; i < 3; i++) {
 }
 console.log(numbers);      // Output: [2, 3, 4]
 console.log(count);        // Output: 4
+
+
+function sumArray(arr) {
+    return arr.reduce((a, b) => a + b, 0);
+}
+const total = sumArray(numbers);
+console.log(`Sum: ${total}`);           // Output: Sum: 9
+console.log(`Average: ${total/3}`);     // Output: Average: 3
